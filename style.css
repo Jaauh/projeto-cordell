@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+/* texto Escrito */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* texto titulo*/
+
+:root {
+
+    --fonte0: Verdana, Geneva, Tahoma, sans-serif;
+    --fonteescrita: font-family: 'Kalam', cursive;
+    --fontetitulo: font-family: 'Anton', sans-serif;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+html, body {
+    background-color: darkgray;
+    min-height: 100vh;
+    font-family: var(--fonte0);
+
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+header>h1 {
+    padding-top: 50px;
+    font-size: 4vw;
+    font-family: var(--fontetitulo);
+    font-variant: small-caps;
+}
+
+header>p {
+    padding-bottom: 50px;
+}
+
+header, a footer, a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+
+header a:hover, footer a:hover {
+
+    text-decoration: underline;
+    color: chocolate;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+article {
+    font-size: 3.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+span {
+    background-image: linear-gradient(to right, chocolate, transparent);
+}
+
+article>p {
+    padding-bottom: 30px;
+    font-family: 'Kalam', cursive;
+
+
+}
+
+
+article.imagem {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    background-attachment: fixed;
+}
+
+article#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-image: cover;
+}
+
+article#img02 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-image: cover;
+}
+
+article.imagem>p {
+    text-shadow: 5px black;
+    display: inline-block;
+
+}
+
+article.normal {
+    background-color: white;
+    color: black;
+}
